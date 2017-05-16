@@ -48,6 +48,8 @@
         <module>dubbo-registry</module>
         <module>dubbo-monitor</module>
         <module>dubbo-config</module>
+        <module>dubbo-admin</module>
+        <module>dubbo-demo</module>
     </modules>
 
     <profiles>
