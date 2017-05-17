@@ -29,15 +29,13 @@ public class HelloWorldConsumer {
     }
 
     public void start() throws Exception {
-        for (int i = 0; i < 10; i++) {
-            try {
-                String hello = helloWorldService.sayHello("world" + i);
-                System.out.println("[" + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "] " + hello);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            Thread.sleep(2000);
+        try {
+            String hello = helloWorldService.sayHello("hello world");
+            System.out.println("[" + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "] " + hello);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        Thread.sleep(2000);
     }
 
 }
